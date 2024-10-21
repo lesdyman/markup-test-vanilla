@@ -1,0 +1,112 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #FAFBFF;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 306px;
+  height: 100%;
+  padding: 28px;
+  background-color: #fff;
+
+  &__logo-block {
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+    margin-bottom: 25px;
+  }
+
+  &__title-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__logo {
+    width: 37px;
+    height: 37px;
+  }
+
+  &__title {
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  &__version {
+    font-size: 10px;
+    padding-bottom: 8px;
+    color: #838383;
+    font-weight: 500;
+  }
+
+  &__buttons {
+    list-style: none;
+    color: #9197B3;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+
+    &-button {
+      display: flex;
+      align-items: center;
+      height: 46px;
+      padding: 11px;
+      cursor: pointer;
+      margin-top: 18px;
+
+      &-icon {
+        height: 24px;
+        width: 24px;
+      }
+      &-text {
+        font-size: 14px;
+        font-weight: 500;
+        padding-left: 14px;
+      }
+      &-pointer {
+        margin-left: auto;
+      }
+    }
+  }
+
+  &__user-block {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+    &__icon {
+      height: 42px;
+      width: 42px;
+      margin-right: 10px;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__name {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    &__role {
+      font-size: 12px;
+      font-weight: 400;
+      color: #757575;
+    }
+  }
+}
+
+.active {
+  background-color: #5932EA;
+  color: #FFF;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease, height 0.3s ease, padding 0.3s ease;
+}
