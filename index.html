@@ -13,54 +13,199 @@
   </head>
 
   <body>
-    <nav class="navigation">
-      <div class="navigation__logo-block">
-        <div class="navigation__title-group">
-          <img src="/assets/setting 1.svg" alt="navigation logo" class="navigation__logo">
-          <div class="navigation__title">Dashboard</div>
-        </div>
-        <div class="navigation__version">v.01</div>
+    <nav id="navigation" class="navigation">
+      <div id="nav-close" class="nav-close">x</div>
+      <div id="burger-menu" class="navigation__burger-menu">
+        <img src="./assets/icons8-hamburger-menu.svg" alt="burger menue">
       </div>
 
-      <ul class="navigation__buttons">
-        <li class="navigation__buttons-button">
-          <img class="navigation__buttons-button-icon" src="/assets/key-square.svg" alt="dashboard icon">
-          <div class="navigation__buttons-button-text">Dashboard</div>
-        </li>
-        <li class="navigation__buttons-button">
-          <img class="navigation__buttons-button-icon" src="/assets/3d-square 1.svg" alt="dashboard icon">
-          <div class="navigation__buttons-button-text">Product</div>
-          <div class="navigation__buttons-button-pointer">></div>
-        </li>
-        <li class="navigation__buttons-button">
-          <img class="navigation__buttons-button-icon" src="/assets/user-square 1.svg" alt="dashboard icon">
-          <div class="navigation__buttons-button-text">Customers</div>
-          <div class="navigation__buttons-button-pointer">></div>
-        </li>
-        <li class="navigation__buttons-button">
-          <img class="navigation__buttons-button-icon" src="/assets/wallet-money 2.svg" alt="dashboard icon">
-          <div class="navigation__buttons-button-text">Income</div>
-          <div class="navigation__buttons-button-pointer">></div>
-        </li>
-        <li class="navigation__buttons-button">
-          <img class="navigation__buttons-button-icon" src="/assets/discount-shape 1.svg" alt="dashboard icon">
-          <div class="navigation__buttons-button-text">Promote</div>
-          <div class="navigation__buttons-button-pointer">></div>
-        </li>
-        <li class="navigation__buttons-button">
-          <img class="navigation__buttons-button-icon" src="/assets/message-question 1.svg" alt="dashboard icon">
-          <div class="navigation__buttons-button-text">Help</div>
-          <div class="navigation__buttons-button-pointer">></div>
-        </li>
-      </ul>
-
+      <div class="navigation-container">
+        <div class="navigation__logo-block">
+          <div class="navigation__title-group">
+            <img src="/assets/setting 1.svg" alt="navigation logo" class="navigation__logo">
+            <div class="navigation__title">Dashboard</div>
+          </div>
+          <div class="navigation__version">v.01</div>
+        </div>
+        <ul class="navigation__buttons">
+          <li class="navigation__buttons-button">
+            <img class="navigation__buttons-button-icon" src="/assets/key-square.svg" alt="dashboard icon">
+            <div class="navigation__buttons-button-text">Dashboard</div>
+          </li>
+          <li class="navigation__buttons-button">
+            <img class="navigation__buttons-button-icon" src="/assets/3d-square 1.svg" alt="dashboard icon">
+            <div class="navigation__buttons-button-text">Product</div>
+            <div class="navigation__buttons-button-pointer">></div>
+          </li>
+          <li class="navigation__buttons-button">
+            <img class="navigation__buttons-button-icon" src="/assets/user-square 1.svg" alt="dashboard icon">
+            <div class="navigation__buttons-button-text">Customers</div>
+            <div class="navigation__buttons-button-pointer">></div>
+          </li>
+          <li class="navigation__buttons-button">
+            <img class="navigation__buttons-button-icon" src="/assets/wallet-money 2.svg" alt="dashboard icon">
+            <div class="navigation__buttons-button-text">Income</div>
+            <div class="navigation__buttons-button-pointer">></div>
+          </li>
+          <li class="navigation__buttons-button">
+            <img class="navigation__buttons-button-icon" src="/assets/discount-shape 1.svg" alt="dashboard icon">
+            <div class="navigation__buttons-button-text">Promote</div>
+            <div class="navigation__buttons-button-pointer">></div>
+          </li>
+          <li class="navigation__buttons-button">
+            <img class="navigation__buttons-button-icon" src="/assets/message-question 1.svg" alt="dashboard icon">
+            <div class="navigation__buttons-button-text">Help</div>
+            <div class="navigation__buttons-button-pointer">></div>
+          </li>
+        </ul>
+      </div>
       <div class="navigation__user-block">
         <img class="navigation__user-block__icon" src="/assets/Ellipse 8.png" alt="User photo">
         <div class="navigation__user-block__info">
-          <div class="navigation__user-block__name">Evano</div>
-          <div class="navigation__user-block__role">Project Manager</div>
+          <div class="navigation__user-block__info__name">Evano</div>
+          <div class="navigation__user-block__info__role">Project Manager</div>
         </div>
       </div>
     </nav>
+
+    <div class="content">
+      <header>
+        <h1 class="header__title">Hello Evano 👋🏼,</h1>
+      </header>
+
+      <main class="main_content">
+        <div class="all-customers">
+          <div class="all-customers__top">
+            <div class="all-customers__info">
+              <span class="all-customers__info-title">All Customers</span>
+              <span class="all-customers__info-status">Active Members</span>
+            </div>
+
+            <div class="all-customers__input-container">
+              <img class="all-customers__input-icon" src="./assets//search 1.svg" alt="search incon">
+              <input class="all-customers__input" type="search" placeholder="search" />
+            </div>
+          </div>
+
+          <div class="all-customers__table">
+            <div class="all-customers__table-top">
+              <div class="all-customers__table-title">Customer Name</div>
+              <div class="all-customers__table-title">Company</div>
+              <div class="all-customers__table-title">Phone Number</div>
+              <div class="all-customers__table-title">Email</div>
+              <div class="all-customers__table-title country-cell">Country</div>
+              <div class="all-customers__table-title status-cell">Status</div>
+            </div>
+
+            <div class="all-customers__table-rows">
+              <div class="all-customers__table-row">
+                <div class="all-customers__table-cell">Jane Cooper</div>
+                <div class="all-customers__table-cell">Microsoft</div>
+                <div class="all-customers__table-cell">(225) 555-0118</div>
+                <div class="all-customers__table-cell">jane@microsoft.com</div>
+                <div class="all-customers__table-cell country-cell">United States</div>
+                <div class="all-customers__table-cell status-cell">
+                  <div class="all-customers__table-status status--active">Active</div>
+                </div>
+              </div>
+
+              <div class="all-customers__table-row">
+                <div class="all-customers__table-cell">Floyd Miles</div>
+                <div class="all-customers__table-cell">Yahoo</div>
+                <div class="all-customers__table-cell">(205) 555-0100</div>
+                <div class="all-customers__table-cell">floyd@yahoo.com</div>
+                <div class="all-customers__table-cell country-cell">Kiribati</div>
+                <div class="all-customers__table-cell status-cell">
+                  <div class="all-customers__table-status status--inactive">Inactive</div>
+                </div>
+              </div>
+
+              <div class="all-customers__table-row">
+                <div class="all-customers__table-cell">Ronald Richards</div>
+                <div class="all-customers__table-cell">Adobe</div>
+                <div class="all-customers__table-cell">(302) 555-0107</div>
+                <div class="all-customers__table-cell">ronald@adobe.com</div>
+                <div class="all-customers__table-cell country-cell">Israel</div>
+                <div class="all-customers__table-cell status-cell">
+                  <div class="all-customers__table-status status--inactive">Inactive</div>
+                </div>
+              </div>
+
+              <div class="all-customers__table-row">
+                <div class="all-customers__table-cell">Marvin McKinney</div>
+                <div class="all-customers__table-cell">Tesla</div>
+                <div class="all-customers__table-cell">(252) 555-0126</div>
+                <div class="all-customers__table-cell">marvin@tesla.com</div>
+                <div class="all-customers__table-cell country-cell">Iran</div>
+                <div class="all-customers__table-cell status-cell">
+                  <div class="all-customers__table-status status--active">Аctive</div>
+                </div>
+              </div>
+
+              <div class="all-customers__table-row">
+                <div class="all-customers__table-cell">Jerome Bell</div>
+                <div class="all-customers__table-cell">Google</div>
+                <div class="all-customers__table-cell">(629) 555-0129</div>
+                <div class="all-customers__table-cell">jerome@google.com</div>
+                <div class="all-customers__table-cell country-cell">Réunion</div>
+                <div class="all-customers__table-cell status-cell">
+                  <div class="all-customers__table-status status--active">Аctive</div>
+                </div>
+              </div>
+
+              <div class="all-customers__table-row">
+                <div class="all-customers__table-cell">Kathryn Murphy</div>
+                <div class="all-customers__table-cell">Microsoft</div>
+                <div class="all-customers__table-cell">(406) 555-0120</div>
+                <div class="all-customers__table-cell">kathryn@microsoft.com</div>
+                <div class="all-customers__table-cell country-cell">Curaçao</div>
+                <div class="all-customers__table-cell status-cell">
+                  <div class="all-customers__table-status status--active">Аctive</div>
+                </div>
+              </div>
+
+              <div class="all-customers__table-row">
+                <div class="all-customers__table-cell">Jacob Jones</div>
+                <div class="all-customers__table-cell">Yahoo</div>
+                <div class="all-customers__table-cell">(208) 555-0112</div>
+                <div class="all-customers__table-cell">jacob@yahoo.com</div>
+                <div class="all-customers__table-cell country-cell">Brazil</div>
+                <div class="all-customers__table-cell status-cell">
+                  <div class="all-customers__table-status status--active">Аctive</div>
+                </div>
+              </div>
+
+              <div class="all-customers__table-row">
+                <div class="all-customers__table-cell">Kristin Watson</div>
+                <div class="all-customers__table-cell">Facebook</div>
+                <div class="all-customers__table-cell">(704) 555-0127</div>
+                <div class="all-customers__table-cell">kristin@facebook.com</div>
+                <div class="all-customers__table-cell country-cell">Åland Islands</div>
+                <div class="all-customers__table-cell status-cell status-cell">
+                  <div class="all-customers__table-status status--inactive">Inactive</div>
+                </div>
+              </div>
+
+              <div class="all-customers__bottom">
+                <span class="all-customers__bottom-pages_info">Showing data 1 to 8 of 256K entries</span>
+
+                <div class="pagination-container">
+                  <div class="arrow-left">&lt;</div>
+                  <ul class="all-customers__bottom-pagitanion">
+                    <li class="all-customers__bottom-pagination-button">1</li>
+                    <li class="all-customers__bottom-pagination-button">2</li>
+                    <li class="all-customers__bottom-pagination-button">3</li>
+                    <li class="all-customers__bottom-pagination-button">4</li>
+                    <span>...</span>
+                    <li class="all-customers__bottom-pagination-button">40</li>
+                  </ul>
+                  <div class="arrow-right">></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
   </body>
 </html>
